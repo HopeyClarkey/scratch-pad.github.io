@@ -65,7 +65,7 @@ function toUpperCase(string) {
 function toDashCase(string) {
   // YOUR CODE BELOW HERE //
   string.toLowerCase();
-  string.replace(/\\s+/g,' ');
+  string.replace(/\\s+/g,'-');
   return string;
   // YOUR CODE ABOVE HERE //
 }
