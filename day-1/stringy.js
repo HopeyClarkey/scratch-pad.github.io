@@ -1,5 +1,3 @@
-// #!/usr/bin/env node
-
 'use strict';
 
 /**
@@ -84,6 +82,10 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+//i- string and comparison character
+//o- boolean if first letter of string and comparison letter match
+//c-
+//e-
 function beginsWith(string, char) {
   // YOUR CODE BELOW HERE //
   char.toLowerCase();
@@ -92,6 +94,7 @@ function beginsWith(string, char) {
     return true;
   } else {
     return false;
+  }
   // YOUR CODE ABOVE HERE //
 }
 
@@ -119,6 +122,7 @@ function endsWith(string, char) {
     return true;
   } else {
     return false;
+  }
   // YOUR CODE ABOVE HERE //
 }
 
@@ -173,6 +177,7 @@ function longest(stringOne, stringTwo) {
     return stringOne;
   } else {
     return stringTwo;
+  }
   // YOUR CODE ABOVE HERE //
 }
 
