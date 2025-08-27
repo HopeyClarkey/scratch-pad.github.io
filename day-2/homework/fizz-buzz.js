@@ -11,11 +11,27 @@
  *  d. FINALLY, for numbers which are multiples of both three and five print “FizzBuzz”.
  */
 function fizzBuzz() {
- // YOUR CODE BELOW HERE //
-
- // YOUR CODE ABOVE HERE //
-}
-
+  // YOUR CODE BELOW HERE //
+   var stArr =[];
+ for (var i = 1; i <= 100; i++) {
+     if (i % 3 === 0 && i % 5 === 0) {
+         stArr.push("FizzBuzz");
+         console.log("FizzBuzz");
+     } else if (i % 3 === 0) {
+         stArr.push("Fizz");
+         console.log("Fizz");
+     } else if (i % 5 === 0) {
+         stArr.push("Buzz");
+         console.log("Buzz");
+     } else {
+         stArr.push(i);
+         console.log(i);
+     }
+ }
+   return stArr;
+  // YOUR CODE ABOVE HERE //
+ }
+ 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
   typeof process !== 'undefined' &&
