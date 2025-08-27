@@ -32,10 +32,25 @@
  *   c. The tests are CASE sensitive, so you MUST console.log('Good Night!') with
  *      the exact case.
  */
-
+//i- hour of the day represented by number
+//o- greeting based on 'shift' change at noon, 4p, & 9p
+//c- must use if/else if/else
+//e-
 function greeter(hour) {
   // YOUR CODE BELOW HERE //
-  
+  //create morning greeting from 12a-12p
+  if (hour >= 0 && hour <= 11){
+    console.log("Good Morning!");
+  //create afternoon greeting from 12p-4p
+    } else if (hour >= 12 && hour <= 16) {
+      console.log("Good Afternoon!");
+  //create evening greeting from 4p-9p
+    } else if (hour >= 17 && hour <=21){
+      console.log("Good Evening!");
+  //create evening greeting until midnight
+    } else {
+      console.log("Good Night!");
+    }
   // YOUR CODE ABOVE HERE //
 }
 
