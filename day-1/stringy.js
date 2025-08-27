@@ -160,6 +160,8 @@ function endsWith(string, char) {
 function join(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
   var args = Array.from(arguments);
+  var newString= args.join('');
+  return newString;
 
   // YOUR CODE ABOVE HERE //
 }
@@ -190,9 +192,21 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+//i- two strings
+//o- value based on alphabetical order comparison
+//c-
+//e-
+
 function sortAscending(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
-
+  if (stringOne < stringTwo){
+    return 1;
+  } if (stringTwo < stringOne){
+    return -1;
+  } if (stringTwo === stringOne){
+    return 0;
+  }
   // YOUR CODE ABOVE HERE //
 }
 
@@ -203,9 +217,20 @@ function sortAscending(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+//i- two strings
+//o- value based on alphabetical order comparison
+//c-
+//e-
+
 function sortDescending(stringOne, stringTwo) {
   // YOUR CODE BELOW HERE //
-  
+  if (stringOne > stringTwo){
+    return 1;
+  } if (stringTwo > stringOne){
+    return -1;
+  } if (stringTwo === stringOne){
+    return 0;
+  }
   // YOUR CODE ABOVE HERE //
 }
 

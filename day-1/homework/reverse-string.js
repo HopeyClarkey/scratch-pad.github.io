@@ -28,9 +28,11 @@ function reverseString(input) {
   // YOUR CODE BELOW HERE //
   var stArr =[];
   var newArr = input.split('');
-for( i = 0; i < newArr.length -1; i--){
-  stArr.push(i)
+for( var i = newArr.length -1; i >= 0; i--){
+  stArr.push(newArr[i])
 }
+  var newString = stArr.join('');
+return newString;
 }
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
