@@ -88,12 +88,12 @@ function toDashCase(string) {
 //e-
 function beginsWith(string, char) {
   // YOUR CODE BELOW HERE //
-  char.toLowerCase();
-  string.toLowerCase();
-  if (string[0] == char[0]){
-    return true;
-  } else {
+  char = char.toLowerCase();
+  string = string.toLowerCase();
+  if (string[0] != char){
     return false;
+  } else {
+    return true;
   }
   // YOUR CODE ABOVE HERE //
 }
@@ -116,12 +116,12 @@ function beginsWith(string, char) {
   //e-
 function endsWith(string, char) {
   // YOUR CODE BELOW HERE //
-  string.toLowerCase();
-  char.toLowerCase();
-  if (string[string.length-1] == char) {
-    return true;
-  } else {
+  string = string.toLowerCase();
+  char = char.toLowerCase();
+  if (string[string.length-1] != char) {
     return false;
+  } else {
+    return true;
   }
   // YOUR CODE ABOVE HERE //
 }
@@ -135,11 +135,13 @@ function endsWith(string, char) {
   //o- one string out of the other combined strings
   //c- 
   //e-
-function concat(stringOne, stringTwo) {
-  // YOUR CODE BELOW HERE //
- return stringOne + stringTwo;
-  // YOUR CODE ABOVE HERE //
-}
+  function concat(stringOne, stringTwo) {
+    // YOUR CODE BELOW HERE //
+   var newString = stringOne + stringTwo;
+   return newString;
+    // YOUR CODE ABOVE HERE //
+  }
+  
 
 /**
  * Given any number of Strings, return all of them joined together.
