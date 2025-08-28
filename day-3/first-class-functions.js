@@ -101,6 +101,12 @@ function createEndsWithFilter(endsWith) {
  *    modifyString(['a', 'b'], function(str){ return str + "!" });
  *    // returns => ['a!', 'b!']
  */
+
+//i- an array of strings and a function that modifies the string
+//o- that array, modified via the function
+//c- use a loop
+//e-
+
 function modifyStrings(strings, modify) {
   // YOUR CODE BELOW HERE //
 
