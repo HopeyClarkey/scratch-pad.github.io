@@ -38,9 +38,23 @@ function createGreaterThanFilter(base) {
  * base. (test means return true or false)
  *
  */
+//i- a parameter called base that can be a string or number
+//o- a function that checks to see if the value is less than the base 
+//c
+//e
+
 function createLessThanFilter(base) {
   // YOUR CODE BELOW HERE //
-  
+  //return the comparison function
+  return function(value) {
+    //test if value is less than base
+    if (value < base){
+      //return if true /false
+      return true;
+    } else {
+      return false;
+    }
+  }
   // YOUR CODE ABOVE HERE //
 }
 
