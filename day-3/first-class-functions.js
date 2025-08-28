@@ -17,13 +17,12 @@
 //c-
 //e-
 function createGreaterThanFilter(base) {
-  //return the comparison function
-  return function(value) {
+  // YOUR CODE BELOW HERE //
+   //return the comparison function
+   return function(value) {
     //test if value is greater than base
     return value > base;
-  }
-  // YOUR CODE BELOW HERE //
-  
+  };
   // YOUR CODE ABOVE HERE //
 }
 
@@ -44,7 +43,7 @@ function createLessThanFilter(base) {
   return function(value) {
     //test if value is less than base
     return value < base;
-  }
+  };
   // YOUR CODE ABOVE HERE //
 }
 
@@ -64,7 +63,7 @@ function createStartsWithFilter(startsWith) {
   // YOUR CODE BELOW HERE //
   //return function that takes a string
   return function(string){
-
+//make sure case doesn't matter and compare to starts with value
     return string[0].toLowerCase() === startsWith.toLowerCase();
   };
   // YOUR CODE ABOVE HERE //
@@ -79,7 +78,11 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
   // YOUR CODE BELOW HERE //
-
+  //return function that takes a string
+  return function(string){
+    //make sure case doesn't matter and compare to end value
+        return string.[string.length-1].toLowerCase() === endsWith.toLowerCase();
+      };
   // YOUR CODE ABOVE HERE //
 }
 
