@@ -17,8 +17,11 @@
 //c-
 //e-
 function createGreaterThanFilter(base) {
+  //return the comparison function
   return function(value) {
+    //test if value is greater than base
     if (value > base){
+      //return if true /false
       return true;
     } else {
       return false;
