@@ -81,7 +81,7 @@ function createEndsWithFilter(endsWith) {
   //return function that takes a string
   return function(string){
     //make sure case doesn't matter and compare to end value
-        return string.[string.length-1].toLowerCase() === endsWith.toLowerCase();
+        return string[string.length-1].toLowerCase() === endsWith.toLowerCase();
       };
   // YOUR CODE ABOVE HERE //
 }
