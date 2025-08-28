@@ -20,12 +20,7 @@ function createGreaterThanFilter(base) {
   //return the comparison function
   return function(value) {
     //test if value is greater than base
-    if (value > base){
-      //return if true /false
-      return true;
-    } else {
-      return false;
-    }
+    return value > base;
   }
   // YOUR CODE BELOW HERE //
   
@@ -48,12 +43,7 @@ function createLessThanFilter(base) {
   //return the comparison function
   return function(value) {
     //test if value is less than base
-    if (value < base){
-      //return if true /false
-      return true;
-    } else {
-      return false;
-    }
+    return value < base;
   }
   // YOUR CODE ABOVE HERE //
 }
@@ -65,9 +55,18 @@ function createLessThanFilter(base) {
  *
  * This function needs to be case insensitive.
  */
+//i-a single character
+//o- a function that tests whether or not a String starts with that character
+//c- needs to be case insensitive
+//e-
+
 function createStartsWithFilter(startsWith) {
   // YOUR CODE BELOW HERE //
+  //return function that takes a string
+  return function(string){
 
+    return string[0].toLowerCase() === startsWith.toLowerCase();
+  };
   // YOUR CODE ABOVE HERE //
 }
 
