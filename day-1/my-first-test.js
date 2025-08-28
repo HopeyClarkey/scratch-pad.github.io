@@ -5,7 +5,7 @@
 /**
  * IN CLASS EXERCISE: MY FIRST TEST
  *
- * The point of this little exercise is to get you familar with how we role with
+ * The point of this little exercise is to get you familar with how we roll with
  * working on and submitting assignments. You'll code, save, and check the tests.
  * You can preview the index html file to see all the tests that are currently passing
  * or failing. Save your code and hit the refresh button to see the current failing
@@ -18,7 +18,7 @@
 
 function print(value) {
   // YOUR CODE BELOW HERE //
-
+console.log(value);
   // YOUR CODE ABOVE HERE //
 }
 
