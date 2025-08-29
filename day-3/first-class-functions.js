@@ -143,7 +143,16 @@ var stArr= [];
 
 function allStringsPass(strings, test) {
   // YOUR CODE BELOW HERE //
-
+//loop through array
+  for (var i=0; i < strings.length; i++){
+    //test function with if on each iteration
+    if (test(strings[i]) === false){
+      //if false return false
+      return false;
+    }
+  }
+  //if loop finishes return true
+  return true;
   // YOUR CODE ABOVE HERE //
 }
 
