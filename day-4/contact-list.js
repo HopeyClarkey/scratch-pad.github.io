@@ -74,17 +74,18 @@ function makeContactList() {
     },
   //add contact requirement
     addContact: function (contact){
-      
+      //takes the contacts array, and finds the end by calling length, and updates to the contact provided????
+      contacts[contacts.length] = contact;
     },
-    //find contact requirement
+  //find contact requirement
     findContact: function (fullName){
 
     },
-    //remove contact requirement
+  //remove contact requirement
     removeContact: function (contact){
 
     },
-    //print requirement- does not need a parameter because it's just doing something??
+  //print requirement- does not need a parameter because it's just doing something??id*k
     printAllContactNames: function (){
 
     }
