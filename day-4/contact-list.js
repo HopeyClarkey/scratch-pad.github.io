@@ -52,19 +52,44 @@ function makeContact(id, nameFirst, nameLast) {
 
 
 
+// i-
+//o- object that manages contacts
+//c- must use methods: length- to find the number of contacts within the list
+//c ct- add contact- takes an object called 'contact' to be added to the contact list
+//c ct- findcontact-takes a full name string called 'fullname'- this should return the contact object if a match is found within the object, and undefined if it does not
+//c ct- removeContact- this would remove the object 'contact'
+//c ct- printAllContactNames- this should return a string formated with all the full names of the contact objects with a line break
+//c ct- ^^^ last full name should have NO new line character added after it.
 
 function makeContactList() {
   /*
    * You need something here to hold contacts. See length api for a hint:
    */
   var contacts = [];
-
+  //length requirement
   return {
     // we implemented the length api for you //
     length: function(){
       return contacts.length;
     },
+  //add contact requirement
+    addContact: function (contact){
+      
+    },
+    //find contact requirement
+    findContact: function (fullName){
+
+    },
+    //remove contact requirement
+    removeContact: function (contact){
+
+    },
+    //print requirement- does not need a parameter because it's just doing something??
+    printAllContactNames: function (){
+
+    }
   }
+
 }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
