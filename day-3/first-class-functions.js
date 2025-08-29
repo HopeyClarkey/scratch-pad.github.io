@@ -104,12 +104,20 @@ function createEndsWithFilter(endsWith) {
 
 //i- an array of strings and a function that modifies the string
 //o- that array, modified via the function
-//c- use a loop
+//c- use a loop & a storage array
 //e-
 
 function modifyStrings(strings, modify) {
   // YOUR CODE BELOW HERE //
-
+// create storage array
+var stArr= [];
+//create loop to iterate through array of strings
+  for (var i = 0; i < strings.length; i++){
+    //push the result of the function into the storage array
+    stArr.push(modify(strings[i]));
+  }
+  //return storage array
+  return stArr;
   // YOUR CODE ABOVE HERE //
 }
 

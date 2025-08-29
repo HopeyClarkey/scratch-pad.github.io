@@ -37,6 +37,9 @@ function makeContact(id, nameFirst, nameLast) {
   // Solve this function first
 }
 
+
+
+
 function makeContactList() {
   /*
    * You need something here to hold contacts. See length api for a hint:
