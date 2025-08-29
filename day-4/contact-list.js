@@ -32,9 +32,22 @@
  *          WARNING: To pass this test, the LAST full name should have NO
  *          new-line character added after it!
  */
+//i- takes 3 parameters, id, first name, and last name.
+//o- object that has all three parameters as keys in object
+//c-
+//e-
 
 function makeContact(id, nameFirst, nameLast) {
   // Solve this function first
+  //function must return object
+  return {
+    //id key & id value
+    id: id,
+    //first name key and value
+    nameFirst: nameFirst,
+    //last name key and value
+    nameLast: nameLast
+  }
 }
 
 

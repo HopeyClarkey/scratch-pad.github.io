@@ -140,6 +140,10 @@ var stArr= [];
  *    // returns => false
  */
 
+// i- takes an array and a test function
+//o- true if all items in array pass test, false if not
+//c- loop
+//e-
 
 function allStringsPass(strings, test) {
   // YOUR CODE BELOW HERE //
