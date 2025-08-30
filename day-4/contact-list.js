@@ -69,6 +69,7 @@ function makeContactList() {
   /*
    * You need something here to hold contacts. See length api for a hint:
    */
+  //contacts is a storage array
   var contacts = [];
   // length requirement
   return {
@@ -77,14 +78,13 @@ function makeContactList() {
       return contacts.length;
     },
 
-  // add contact requirement
+  // add contact requirement:
     addContact: function (contact){
       //takes the contacts array, and finds the end by calling length, and updates to the contact provided????
       contacts[contacts.length] = contact;
     },
 
-  // find contact requirement
-
+  // find contact requirement:
   // create function itself
     findContact: function (fullName){
   // split full name into search components
@@ -93,23 +93,29 @@ function makeContactList() {
       for (var i = 0; i < contacts.length; i++){
   // create variable that represents i
         var contact = contacts[i];
-  // if statement to check if split name matches first and last name, using new contact variable to 'point' to [i]
-      if (contact[nameFirst] === searchName[0] && contact[nameLast] === searchName[1]){
+  // if statement to check if split name matches first and last name, using new contact variable to 'point' to contacts[i]
+      if (contact['nameFirst'] === searchName[0] && contact['nameLast'] === searchName[1]){
+  // return the contact where this is true.
         return contact;
-      }
       }
     }
 
-    };
+    },
   // remove contact requirement
     removeContact: function (contact){
 
-    };
+    },
   //print requirement- does not need a parameter because it's just doing something??id*k
     printAllContactNames: function (){
+    }
+    
+  };
 
-    };
   }
+
+
+
+
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
   typeof process !== 'undefined' &&
