@@ -69,42 +69,68 @@ function makeContactList() {
   /*
    * You need something here to hold contacts. See length api for a hint:
    */
+
   //contacts is a storage array
-  var contacts = [];
+    var contacts = [];
   // length requirement
-  return {
-    // we implemented the length api for you //
+        return {
+
+
+  // we implemented the length api for you //
     length: function(){
-      return contacts.length;
+        return contacts.length;
     },
+
 
   // add contact requirement:
     addContact: function (contact){
-      //takes the contacts array, and finds the end by calling length, and updates to the contact provided????
+
+  //takes the contacts array, and finds the end by calling length, and updates to the contact provided????
       contacts[contacts.length] = contact;
     },
+
 
   // find contact requirement:
   // create function itself
     findContact: function (fullName){
+  
   // split full name into search components
       var searchName = fullName.split(' ');
+ 
   // loop through contact list 
-      for (var i = 0; i < contacts.length; i++){
+        for (var i = 0; i < contacts.length; i++){
+  
   // create variable that represents i
-        var contact = contacts[i];
+      var contact = contacts[i];
+
   // if statement to check if split name matches first and last name, using new contact variable to 'point' to contacts[i]
-      if (contact['nameFirst'] === searchName[0] && contact['nameLast'] === searchName[1]){
+        if (contact['nameFirst'] === searchName[0] && contact['nameLast'] === searchName[1]){
+  
   // return the contact where this is true.
         return contact;
+        }
       }
-    }
-
     },
+
+
   // remove contact requirement
     removeContact: function (contact){
+  
+  //loop through contact list
+        for (var i = 0; i < contacts.length; i++){
 
+  //create variable that represents i
+      var searchContact = contacts[i];
+  
+  // if statement to check if contact matches item in array
+        if (searchContact === contact ){
+
+  // splice that takes out the index i 1 item 
+          contacts.splice(i, 1);
+        }
+      }
     },
+    
   //print requirement- does not need a parameter because it's just doing something??id*k
     printAllContactNames: function (){
     }
