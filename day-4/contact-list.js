@@ -84,6 +84,7 @@ function makeContactList() {
     },
 
   // find contact requirement
+
   // create function itself
     findContact: function (fullName){
   // split full name into search components
@@ -93,9 +94,11 @@ function makeContactList() {
   // create variable that represents i
         var contact = contacts[i];
   // if statement to check if split name matches first and last name, using new contact variable to 'point' to [i]
-      if (contact[nameFirst] === searchName[0] && contact[nameLast] === searchName[1]);
-      };
-    };
+      if (contact[nameFirst] === searchName[0] && contact[nameLast] === searchName[1]){
+        return contact;
+      }
+      }
+    }
 
     };
   // remove contact requirement
@@ -107,9 +110,6 @@ function makeContactList() {
 
     };
   }
-
-}
-
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
   typeof process !== 'undefined' &&
