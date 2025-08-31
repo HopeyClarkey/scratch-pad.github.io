@@ -77,7 +77,7 @@ function makeContactList() {
   // we implemented the length api for you //
   // creat function, taking no parameter as it is just finding the number of contacts within the list
     length: function(){
-  // returns the amount of contacts.
+  // returns the amount of contacts
         return contacts.length;
     },
 
