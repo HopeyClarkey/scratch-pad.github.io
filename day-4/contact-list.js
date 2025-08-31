@@ -70,28 +70,32 @@ function makeContactList() {
    */
   //contacts storage array
     var contacts = [];
+  //returning object with each function as an entry and a key
         return {
 
-  // length requirement
+  // key length: requirement-
   // we implemented the length api for you //
+  // creat function, taking no parameter as it is just finding the number of contacts within the list
     length: function(){
+  // returns the amount of contacts.
         return contacts.length;
     },
 
 
-  // add contact requirement:
+  // key addContact: requirement-
+  //create function that takes 1 parameter, a contact you would like to add.
     addContact: function (contact){
   //takes the contacts array, and finds the end by calling length, and updates to the contact provided
       contacts[contacts.length] = contact;
     },
 
 
-  // find contact requirement:
-  // create function itself
+  // key findContact: requirement-
+  // create function itself, taking a parameter called fullName
     findContact: function (fullName){
   // split full name into search components
       var searchName = fullName.split(' ');
-  // loop through contact list 
+  // loop through contact list by 1
         for (var i = 0; i < contacts.length; i++){
   // create variable that represents i
       var contact = contacts[i];
@@ -105,10 +109,11 @@ function makeContactList() {
 
 
   // remove contact requirement
+  //create function that takes a contact object as the parameter to search agains
     removeContact: function (contact){ 
   //loop through contact list
         for (var i = 0; i < contacts.length; i++){
-  //create variable that represents i
+  //create variable that represents contact within array, to check against
       var searchContact = contacts[i];
   // if statement to check if contact matches item in array
         if (searchContact === contact ){
@@ -118,7 +123,8 @@ function makeContactList() {
       }
     },
 
-  //print requirement- does not need a parameter because it's just doing something, just like length requirement
+  //print requirement- 
+  //create function- it does not need a parameter because it's just doing something, just like length requirement
     printAllContactNames: function (){
   // create storage Array
       var stArr = [];
